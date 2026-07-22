@@ -11,14 +11,7 @@ class Solution(object):
              cnt+=1
            else:
              cnt-=1
-        count=0
-        for i in range(len(nums)):
-            if el==nums[i]:
-             count+=1
-        if count > (len(nums)//2):
-            return el
-        else:
-            return -1
+        return el
         
 
 
