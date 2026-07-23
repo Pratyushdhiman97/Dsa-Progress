@@ -1,15 +1,15 @@
 class Solution(object):
     def rearrangeArray(self, nums):
-        ans=[0]*int(len(nums))
+        ans=[0]*len(nums)
         a=1
         b=0
-        for i in range(len(nums)):
+        for i in nums:
   
-           if nums[i] < 0 :
-            ans[a]=nums[i]
+           if i < 0 :
+            ans[a]=i
             a += 2
            else:
-            ans[b]=nums[i]
+            ans[b]=i
             b+=2
 
         return ans 
